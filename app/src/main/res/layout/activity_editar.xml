@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditarActivity">
+
+    <TextView android:id="@+id/text_codigo_editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/codigo" />
+
+    <EditText android:id="@+id/edit_codigo_editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_edit"
+        android:padding="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/codigo"
+        android:autofillHints="" />
+
+    <TextView android:id="@+id/text_hora_editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/hora" />
+
+    <EditText android:id="@+id/edit_hora_editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_edit"
+        android:padding="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:enabled="false"
+        android:clickable="false"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="number"
+        android:hint="@string/hora"
+        android:autofillHints="" />
+
+    <Button android:id="@+id/button_salvar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/btn_adicionar_salvar"
+        android:layout_marginEnd="8dp"
+        android:textSize="24sp"
+        android:layout_marginStart="8dp"
+        android:textAllCaps="false"
+        android:text="@string/btn_salvar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="@integer/material_motion_duration_long_1"/>
+
+        <Button android:id="@+id/button_voltar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btn_voltar"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:text="@string/btn_voltar" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="@integer/material_motion_duration_long_1"/>
+
+        <Button android:id="@+id/button_deletar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btn_deletar"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:text="@string/btn_deletar" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="@integer/material_motion_duration_long_1"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
